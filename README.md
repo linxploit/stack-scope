@@ -8,7 +8,7 @@
 |____/ |_/_/   \_\____|_|\_\____/ \____\___/|_|   |_____|
 ```
 
-### ✦ Web Technology Fingerprinting & CMS Detection ✦
+### ✦ Web Technology Fingerprinting & CMS Detection
 
 **Signature-based fingerprinting. No exploitation.**
 
