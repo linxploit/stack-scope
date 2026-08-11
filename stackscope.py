@@ -53,9 +53,6 @@ PORTFOLIO = "https://linxploit.com/founder"
 
 requests.packages.urllib3.disable_warnings()  # noqa
 
-# --------------------------------------------------------------------------- #
-#  UI toolkit
-# --------------------------------------------------------------------------- #
 
 GRADIENT = [
     "\033[38;5;99m", "\033[38;5;105m", "\033[38;5;111m", "\033[38;5;117m",
@@ -180,10 +177,6 @@ def section(title: str, color: str = Fore.CYAN):
 def hr(color=C_MUTE, width=70):
     print(color + BOX["h"] * width + RESET)
 
-
-# --------------------------------------------------------------------------- #
-#  Signature database
-# --------------------------------------------------------------------------- #
 # Every pattern is a real regular expression (fixed from the original, which
 # defined regex-looking strings but only ever ran plain substring checks —
 # meaning any pattern with a capture group, like a version number, never
@@ -326,10 +319,6 @@ INTERESTING_HEADERS = [
 ]
 
 
-# --------------------------------------------------------------------------- #
-#  Data model
-# --------------------------------------------------------------------------- #
-
 @dataclass
 class Technology:
     category: str
@@ -352,10 +341,6 @@ class ScanResult:
     outdated_flags: List[str] = field(default_factory=list)
     error: Optional[str] = None
 
-
-# --------------------------------------------------------------------------- #
-#  Detection engine
-# --------------------------------------------------------------------------- #
 
 def _search(patterns: List[str], text: str) -> Optional[re.Match]:
     for pattern in patterns:
@@ -559,9 +544,6 @@ def scan_target(url: str, timeout: int, headers: dict, cookies: dict, verify_ssl
     return result
 
 
-# --------------------------------------------------------------------------- #
-#  Reporting
-# --------------------------------------------------------------------------- #
 
 def print_result(result: ScanResult, verbose: bool):
     section(f"TARGET: {result.url}", Fore.CYAN)
@@ -661,11 +643,6 @@ def save_csv(results: List[ScanResult], path: str):
                 row = asdict(tech)
                 row["url"] = r.url
                 writer.writerow({k: row.get(k) for k in fields})
-
-
-# --------------------------------------------------------------------------- #
-#  CLI
-# --------------------------------------------------------------------------- #
 
 def parse_header_list(items: Optional[List[str]]) -> dict:
     headers = {}
