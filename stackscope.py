@@ -173,8 +173,6 @@ def hr(color=C_MUTE, width=70):
     print(color + BOX["h"] * width + RESET)
 
 # Every pattern is a real regular expression (fixed from the original, which
-# defined regex-looking strings but only ever ran plain substring checks —
-
 
 SERVER_SIGNATURES = {
     "Apache": [r"Apache(?:/(\d+(?:\.\d+)*))?"],
