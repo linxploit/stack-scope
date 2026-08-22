@@ -366,7 +366,6 @@ def detect_server(headers: Dict[str, str]) -> List[Technology]:
             found.append(Technology("Web Server", name, version, "HIGH", f"Server header: {server_header}"))
             return found
 
-    # Unknown server string — still surface it, lower confidence.
     found.append(Technology("Web Server", server_header.split("/")[0], None, "MEDIUM",
                              f"Server header: {server_header}"))
     return found
