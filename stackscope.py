@@ -19,11 +19,6 @@ WHAT THIS TOOL DOES:
     and CDNs. It also flags version disclosure and known end-of-life
     software versions where a version string is visible.
 
-    Detection is signature-based fingerprinting of publicly-served
-    content, the same category of technique used by tools like
-    Wappalyzer or WhatWeb. It performs no exploitation and no
-    authentication bypass. Only assess targets you own or are
-    explicitly authorized to test.
 """
 
 import argparse
