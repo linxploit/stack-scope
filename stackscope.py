@@ -295,8 +295,7 @@ TECH_INDICATOR_HEADERS = {
     "X-Fastly-Request-ID": "Fastly",
 }
 
-# End-of-life / outdated version markers — (name, max_eol_version_exclusive)
-# Anything at or below these is flagged. Kept intentionally conservative and
+
 EOL_THRESHOLDS = {
     "PHP": (8, 0),
     "Apache": (2, 4),
