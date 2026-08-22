@@ -300,7 +300,6 @@ TECH_INDICATOR_HEADERS = {
 
 # End-of-life / outdated version markers — (name, max_eol_version_exclusive)
 # Anything at or below these is flagged. Kept intentionally conservative and
-# well past EOL to avoid false "outdated" alarms on recent-but-old versions.
 EOL_THRESHOLDS = {
     "PHP": (8, 0),
     "Apache": (2, 4),
