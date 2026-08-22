@@ -175,7 +175,7 @@ def hr(color=C_MUTE, width=70):
 # Every pattern is a real regular expression (fixed from the original, which
 # defined regex-looking strings but only ever ran plain substring checks —
 # meaning any pattern with a capture group, like a version number, never
-# actually matched). Patterns are matched with re.search + re.IGNORECASE.
+
 
 SERVER_SIGNATURES = {
     "Apache": [r"Apache(?:/(\d+(?:\.\d+)*))?"],
