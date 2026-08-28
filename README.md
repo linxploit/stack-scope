@@ -48,7 +48,7 @@ Where it goes further than a simple keyword grep: every signature is a real, tes
 ## 📸 Preview
 
 ```
-✦ Web Technology Fingerprinting & CMS Detection
+ Web Technology Fingerprinting & CMS Detection
 v1.0.0 · Signature-based fingerprinting. No exploitation.
 
 [ TARGET: https://example.com ]
