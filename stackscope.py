@@ -20,7 +20,7 @@ WHAT THIS TOOL DOES:
     software versions where a version string is visible.
 
 """
-23r 2
+
 import argparse
 import concurrent.futures
 import csv
