@@ -10,7 +10,7 @@
 StackScope — Web Technology Fingerprinting & CMS Detection
 Made by Mindless — Founder & CEO of Linxploit
 https://linxploit.com | https://linxploit.com/founder
-gyt
+
 WHAT THIS TOOL DOES:
     StackScope sends a single, normal HTTP GET request per target — the
     same request any browser makes when loading a page — and matches
